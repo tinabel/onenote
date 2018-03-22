@@ -17,11 +17,12 @@ a:hover {
 }
 
 
- img.wp-post-image {
-    display:inline-block;
-    float: left;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
+img.wp-post-image {
+	display: inline-block;
+	float: left;
+	margin-bottom: 0.6rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
 }
 
 h2 {

@@ -29,6 +29,11 @@
             </header>
             <div id="navigation" class="site-navigation">
                     <nav class="nav">
-                        <?php wp_nav_menu(); ?>
+                        <?php wp_nav_menu(
+                            array(
+                                'theme_location' => 'header-menu',
+                                'container_class' => 'header-menu'
+                            )
+                        ); ?>
                     </nav>
             </div>
