@@ -2,7 +2,7 @@
 <section class="main" id="main">
             <?php
                 if ( have_posts() ) : while ( have_posts() ) : the_post();
-                    get_template_part( 'content', get_post_format() );
+                    get_template_part( 'single-content', get_post_format() );
                     wp_link_pages();
                 endwhile; endif;
             ?>
