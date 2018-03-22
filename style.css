@@ -1,0 +1,24 @@
+/*
+Theme Name: One Note
+Theme URI: http://tinabellvance.com/themes/onenote
+Author: Tina Bell Vance
+Author URI: http://tinabellvance.com
+Description: One-page Grid template for WordPress
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: onenote
+Tags: custom-header
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.screen-reader-text {}
+.gallery-caption {}
+.bypostauthor {}
+.alignright {}
+.alignleft {}
+.aligncenter {}
