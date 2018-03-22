@@ -1,6 +1,6 @@
     <div>
-        <div onclick="location.href='<?php the_permalink(); ?>'" class="post-link">
-            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div data-url="<?php the_permalink(); ?>" class="post-link" tabindex="0" role="link">
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <h2 class="post-title"><?php the_title(); ?></h2>
                 <?php
                  if ( has_post_thumbnail()) {
@@ -11,7 +11,7 @@
                 } else {
                     the_excerpt();
                 } ?>
-            </div>
+            </article>
         </div>
         <p class="tags">
             <?php the_tags();?>
