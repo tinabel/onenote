@@ -48,6 +48,22 @@ textarea {
     max-width: 50rem;
 }
 
+.alignright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.aligncenter {
+    float: none;
+    margin: 0 auto 1rem auto;
+    position: relative;
+}
+
 .skip-link {
     color: #fff;
     display: block;
@@ -226,6 +242,10 @@ textarea {
         -o-text-overflow: ellipsis;
            text-overflow: ellipsis;
         width: 100%;
+    }
+
+    .post-link img {
+        width: 50%;
     }
 
 
