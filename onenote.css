@@ -44,6 +44,10 @@ p {
     line-height: 1.25;
 }
 
+textarea {
+    max-width: 50rem;
+}
+
 .skip-link {
     color: #fff;
     display: block;
