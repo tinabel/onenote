@@ -17,7 +17,7 @@
         }
 
         function onenote_excerpt_length( $length ) {
-            return 40;
+            return 50;
         }
         add_filter( 'excerpt_length', 'onenote_excerpt_length', 999 );
 
@@ -46,15 +46,15 @@
         // Check if layout is one column.
         if ( 'one-column' === $page_layout ) {
             if ( is_frontpage() ) {
-                $content_width = 1000;
+                $content_width = 1024;
             } elseif ( is_page() ) {
-                $content_width = 1000;
+                $content_width = 1024;
             }
         }
 
         // Check if is single post and there is no sidebar.
         if ( is_single() && ! is_active_sidebar( 'sidebar-1' ) ) {
-            $content_width = 1000;
+            $content_width = 1024;
         }
 
         /**
@@ -118,6 +118,17 @@
     function theme_setup(){
         load_theme_textdomain( 'onenote', get_template_directory() . '/languages' );
     }
+
+    /**
+     * Functions which enhance the theme by hooking into WordPress.
+     */
+    require get_template_directory() . '/inc/template-functions.php';
+
+    /**
+     * Customizer additions.
+     */
+    require get_template_directory() . '/inc/customizer.php';
+
 
 add_action( 'widgets_init', 'onenote_widgets_init' );
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
