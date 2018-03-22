@@ -120,22 +120,43 @@ a:hover {
     }
 
     /* post styling on homepage */
-    .home #main a.post-link {
+    .home #main .post-link {
         border: 1px solid #ccc;
         box-sizing: border-box;
         color: #333;
         display: inline-block;
         height: 25rem;
+        line-height: 1.4;
         margin: 0;
         max-height: 25rem;
         overflow: hidden;
         padding: 1rem;
+        position:relative;
+        text-align: justify;
         text-decoration: none;
         text-overflow: ellipsis;
         width: 100%;
     }
 
-    .home #main a.post-link:hover {
+.home #main .post-link:before {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    right: 0;
+}
+
+/* hide ... if we have text, which is less than or equal to max lines */
+.home #main .post-link:after {
+    background: white;
+    content: '';
+    height: 1em;
+    margin-top: 0.2em;
+    position: absolute;
+    right: 0;
+    width: 1em;
+}
+
+    .home #main .post-link:hover {
         background-color: #fff;
         border: 1px solid #aaa;
         box-shadow: 2px 2px 2px #ccc;
