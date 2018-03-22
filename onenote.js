@@ -1,13 +1,9 @@
-window.onload = function() {
-    console.log('loaded')
-
+var postLinks = function () {
     var postContainers = document.getElementsByClassName('post-link');
-    console.log(postContainers);
     for (var i = 0; i < postContainers.length; i++){
         var postContainer = postContainers[i];
         var postUrl = postContainer.getAttribute('data-url');
         postContainer.onclick = function(){
-            console.log(postUrl);
             window.location = postUrl;
         }
 
@@ -16,7 +12,10 @@ window.onload = function() {
             if (event.keyCode === 13) {
                 window.location = postUrl;
             }
-        })
+        });
     }
+}
 
+window.onload = function() {
+    new postLinks;
 }
