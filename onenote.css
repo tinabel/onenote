@@ -167,7 +167,8 @@ p {
     padding: 0 1rem;
 }
     /* Homepage main grid setup */
-    .home #main {
+    .home #main,
+    .archive #main {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         display:-ms-grid;
@@ -180,7 +181,7 @@ p {
     }
 
     /* post styling on homepage */
-    .home #main .post-link {
+    .post-link {
         border: 1px solid #ccc;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
@@ -199,23 +200,23 @@ p {
         width: 100%;
     }
 
-    .home #main .post-link:hover {
+    .post-link:hover {
         background-color: #fff;
         border: 1px solid #aaa;
         -webkit-box-shadow: 2px 2px 2px #ccc;
                 box-shadow: 2px 2px 2px #ccc;
     }
 
-        .home #main .post-link .read-more {
+        .post-link .read-more {
             color: #555;
             font-weight: 500;
         }
 
-        .home #main .post-link:hover .read-more {
+        .post-link:hover .read-more {
             text-decoration: underline;
         }
 
-    .home #main .post {
+    .post-link .post {
         height: 100%;
         overflow: hidden;
         -o-text-overflow: ellipsis;
