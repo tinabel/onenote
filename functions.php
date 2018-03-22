@@ -105,7 +105,7 @@
 
     function onenote_custom_header_setup() {
         $args = array(
-            'default-image'      => get_template_directory_uri() . '/default-image.png',
+            'default-image'      => get_template_directory_uri() . '/default-image.jpg',
             'default-text-color' => '000',
             'width'              => 1000,
             'height'             => 300,
