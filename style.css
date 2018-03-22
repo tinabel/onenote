@@ -19,6 +19,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .screen-reader-text {}
 .gallery-caption {}
 .bypostauthor {}
-.alignright {}
-.alignleft {}
-.aligncenter {}
+
+.alignright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.aligncenter {
+    float: none;
+    margin: 0 auto 1rem auto;
+    position: relative;
+}
