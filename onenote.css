@@ -211,6 +211,8 @@ textarea {
         border: 1px solid #ccc;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+        -webkit-box-shadow: 2px 2px 2px #eee;
+                box-shadow: 2px 2px 2px #eee;
         color: #333;
         cursor: pointer;
         display: block;
