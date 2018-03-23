@@ -364,6 +364,7 @@ textarea {
     grid-column: 1/span 12;
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
+    grid-gap: 2rem;
     grid-row: 6/span 1;
 }
 /* End Footer*/
